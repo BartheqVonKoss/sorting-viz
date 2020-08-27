@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="array-container">
+    <div
+      class="array-bar"
+      *ngFor="let item of state"
+      [style.height]="(item * 2) / 3 + 'px'"
+    ></div>
+  </div>
+  <ul class="controls">
+    <li class="controls-item">
+      <button mat-fab color="primary" title="reset" (click)="resetArray()">
+        Reset
+      </button>
+    </li>
+    <li class="controls-item">
+      <mat-form-field>
+        <mat-label>Array Size</mat-label>
+        <mat-select [(value)]="barsNumber">
+          <mat-option></mat-option>
+          <mat-option [value]="option" *ngFor="let option of amount">{{
+            option
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </li>
+    <li class="controls-item">
+      <button mat-fab color="accent" title="bubble-sort" (click)="bubbleSort()">
+        Bubble
+      </button>
+    </li>
+    <li class="controls-item">
+      <button mat-fab color="accent" title="merge-sort" (click)="mergeSort()">
+        Merge
+      </button>
+    </li>
+    <li class="controls-item">
+      <button mat-fab color="accent" title="quick-sort" (click)="quickSort()">
+        Quick
+      </button>
+    </li>
+    <li class="controls-item">
+      <button mat-fab color="accent" title="heap-sort" (click)="heapSort()">
+        Heap
+      </button>
+    </li>
+    <li class="controls-item">
+      <button mat-fab color="accent" title="insertion-sort" (click)="insertionSort()">
+        Insertion
+      </button>
+    </li>
+    <li class="controls-item">
+      <button mat-fab color="accent" title="selection-sort" (click)="selectionSort()">
+        Selection
+      </button>
+    </li>
+    <li class="controls-item">
+      <button mat-fab color="primary" title="start" (click)="testSorting()">
+        Start
+      </button>
+    </li>
+  </ul>
+</div>

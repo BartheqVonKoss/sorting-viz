@@ -1,0 +1,45 @@
+.container {
+  width: 100vw;
+  height: 80vh;
+}
+
+.controls {
+  flex-direction: row;
+  list-style: none;
+  display: flex;
+  margin-left: 10%;
+}
+
+.controls-item {
+  margin-right: 3rem;
+  margin-bottom: 0;
+}
+
+.setup-choice {
+  display: inline-block;
+}
+
+.sort-choice {
+  display: flex;
+}
+
+.array-container {
+  display: flex;
+  transform: rotateX(180deg);
+  justify-content: space-evenly;
+  margin-top: 10%;
+  bottom: 2%;
+  height: 70vh;
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.array-bar {
+  box-sizing: border-box;
+  width: 10px;
+  background-color: lightblue;
+  display: inline-block;
+  margin: 0 1px;
+  min-width: 1.1px;
+}
